@@ -4,10 +4,10 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-blue-50 px-4 py-16">
+    <main className="min-h-screen flex items-center justify-center bg-linear-to-b from-slate-50 to-blue-50 px-4 py-16">
       <div className="w-full max-w-xl text-center">
         <section className="relative mb-8 flex items-center justify-center">
-          <span className="select-none bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-[120px] font-extrabold leading-none text-transparent sm:text-[180px]">
+          <span className="select-none bg-linear-to-r from-blue-600 to-indigo-500 bg-clip-text text-[120px] font-extrabold leading-none text-transparent sm:text-[180px]">
             404
           </span>
           <span className="absolute inset-0 -z-10 mx-auto h-48 w-48 rounded-full bg-blue-400/20 blur-3xl sm:h-64 sm:w-64" />
