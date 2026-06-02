@@ -11,7 +11,7 @@ const Register = () => {
   const [inputTypePassword, setInputTypePassword] = useState("password");
   const [inputTypeConfirmPassword, setInputTypeConfirmPassword] =
     useState("password");
-  const { data, error, isPending, isSuccess, mutateAsync } = useRegister();
+  const { data, isPending, isSuccess, mutateAsync } = useRegister();
   const onSubmit = (data: any) => {
     if (data["password"] !== data["confirm-password"]) {
       toast.error("Parollar mos emas");
@@ -23,6 +23,9 @@ const Register = () => {
   useEffect(() => {
     if (isSuccess) {
       toast.success("Ro'yxatdan o'tish muvaffaqiyatli amalga oshirildi");
+      const token = data?.data.data.tokens.accessToken;
+      localStorage.setItem("token", token);
+      window.location.href = "/";
     }
   }, [isSuccess]);
   return (
@@ -241,10 +244,11 @@ const Register = () => {
 
             <Button
               type="submit"
+              loading={isPending}
               className="flex cursor-pointer w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-700 active:scale-[0.98]"
               rightIcon={<Icon.arrowRight className="h-4 w-4" />}
             >
-              Ro'yxatdan o'tish
+              {isPending ? "Yuklanmoqda..." : "Ro'yxatdan o'tish"}
             </Button>
 
             <div className="flex items-center gap-3 py-1">
