@@ -1,13 +1,29 @@
+import {
+  TeachersHero,
+  TeachersToolbar,
+  TeacherCard,
+} from "../components/teachers";
+import { Pagination } from "../components/courses";
+import { teachersList } from "../data/teachers.data";
+
 const Teachers = () => {
   return (
-    <>
-      <section className="teachers-hero">
-        <h1>Teachers</h1>
+    <div className="bg-white">
+      <TeachersHero />
+
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <TeachersToolbar />
+
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {teachersList.map((teacher) => (
+            <TeacherCard key={teacher.name} teacher={teacher} />
+          ))}
+        </div>
+
+        <Pagination totalPages={3} />
       </section>
-      <section className="teachers-filter"></section>
-      <section className="teachers-list"></section>
-      <section className="teachers-cta"></section>
-    </>
+    </div>
   );
 };
+
 export default Teachers;
