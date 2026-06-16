@@ -71,8 +71,8 @@ const PopularCourses = () => {
           Barcha kurslarni ko'rish
         </a>
       </div>
-    </section>
-    
+    </section>  
+
   );
 };
 
