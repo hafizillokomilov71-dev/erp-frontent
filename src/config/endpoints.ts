@@ -1,3 +1,4 @@
+// config/endpoints.ts
 const ENDPOINTS = {
   auth: {
     login: "/auth/login",
@@ -12,6 +13,14 @@ const ENDPOINTS = {
     create: "/courses",
     update: (courseId: string) => `/courses/${courseId}`,
     delete: (courseId: string) => `/courses/${courseId}`,
+  },
+  blog: {
+    list: "/blogs",
+    details: (blogId: string) => `/blogs/${blogId}`,
+    popular: "/blogs/popular",
+    categories: "/blogs/categories",
+    tags: "/blogs/tags",
+    search: "/blogs/search",
   },
 };
 export default ENDPOINTS;

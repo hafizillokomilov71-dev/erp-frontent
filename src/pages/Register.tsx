@@ -74,7 +74,7 @@ const Register = () => {
       <main className="flex w-full flex-col overflow-y-auto px-6 py-8 lg:w-1/2 lg:px-16">
         <div className="flex justify-end">
           <a
-            href="#"
+            href="/"
             className="flex items-center gap-1.5 text-sm text-slate-500 transition hover:text-slate-700"
           >
             <Icon.arrowLeft className="h-4 w-4" />
@@ -277,7 +277,7 @@ const Register = () => {
 
           <p className="mt-6 text-center text-sm text-slate-500">
             Hisobingiz bormi?{" "}
-            <a href="#" className="font-semibold text-blue-600 hover:underline">
+            <a href="/login" className="font-semibold text-blue-600 hover:underline">
               Kirish
             </a>
           </p>

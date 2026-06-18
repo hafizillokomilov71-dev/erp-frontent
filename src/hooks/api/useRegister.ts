@@ -23,6 +23,8 @@ const useRegister = () => {
         });
       },
     });
+    console.log(data);
+    
   return { data, error, isSuccess, isError, isPending, mutateAsync };
 };
 export default useRegister;

@@ -6,7 +6,23 @@ import {
 import { Pagination } from "../components/courses";
 import { teachersList } from "../data/teachers.data";
 
+import { fetchTeachers } from "../hooks/api/teachers";
+import { useEffect } from "react";
+
+
+
 const Teachers = () => {
+
+  useEffect(() => {
+    const getTeachers = async () => {
+      const teachers = await fetchTeachers();
+      console.log(teachers);
+    };
+
+    getTeachers();
+  }, []);
+
+
   return (
     <div className="bg-white">
       <TeachersHero />

@@ -1,35 +1,8 @@
 import Icon from "../ui/Icon";
 import SectionHeading from "./SectionHeading";
-import { getAllCours } from "../../api/services/cours.service";
-import { useEffect, useState } from "react";
- interface ICourseCard {
-   title: string;
-   tag: string;
-   tagColor: string;
-   rating: string;
-   desc: string;
-   duration: string;
-   lessons: string;
-   reviews: string;
-   teacher: string;
-   price: string;
-   oldPrice?: string;
-   img: string;
- }
+import { courses } from "../../data/home.data";
+
 const PopularCourses = () => {
-  const [popularCourses, setPopularCourses] = useState<ICourseCard[]>([]);
-
-  useEffect(() => {
-    const fetchPopularCourses = async () => {
-      const res = await getAllCours();
-      setPopularCourses(res.data.items);
-      console.log(res.data);
-
-    };
-
-    fetchPopularCourses();
-  }, []);
-
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
       <SectionHeading
@@ -39,7 +12,7 @@ const PopularCourses = () => {
       />
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {popularCourses.map((c) => (
+        {courses.map((c) => (
           <article
             key={c.title}
             className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg"
@@ -63,7 +36,9 @@ const PopularCourses = () => {
                 <span className="flex shrink-0 items-center gap-1 text-sm font-semibold text-slate-700">
                   <Icon.star className="h-4 w-4 text-amber-400" />
                   {c.rating}
-                  <span className="font-normal text-slate-400">({c.reviews})</span>
+                  <span className="font-normal text-slate-400">
+                    ({c.reviews})
+                  </span>
                 </span>
               </div>
 
@@ -98,8 +73,7 @@ const PopularCourses = () => {
           Barcha kurslarni ko'rish
         </a>
       </div>
-    </section>  
-
+    </section>
   );
 };
 
