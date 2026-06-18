@@ -1,8 +1,35 @@
 import Icon from "../ui/Icon";
 import SectionHeading from "./SectionHeading";
-import { courses } from "../../data/home.data";
-
+import { getAllCours } from "../../api/services/cours.service";
+import { useEffect, useState } from "react";
+ interface ICourseCard {
+   title: string;
+   tag: string;
+   tagColor: string;
+   rating: string;
+   desc: string;
+   duration: string;
+   lessons: string;
+   reviews: string;
+   teacher: string;
+   price: string;
+   oldPrice?: string;
+   img: string;
+ }
 const PopularCourses = () => {
+  const [popularCourses, setPopularCourses] = useState<ICourseCard[]>([]);
+
+  useEffect(() => {
+    const fetchPopularCourses = async () => {
+      const res = await getAllCours();
+      setPopularCourses(res.data.items);
+      console.log(res.data);
+
+    };
+
+    fetchPopularCourses();
+  }, []);
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
       <SectionHeading
@@ -12,7 +39,7 @@ const PopularCourses = () => {
       />
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {courses.map((c) => (
+        {popularCourses.map((c) => (
           <article
             key={c.title}
             className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg"

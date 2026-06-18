@@ -25,7 +25,7 @@ export const verifyToken = () => {
   const token: string | null = getItem("token");
   if (token) {
     const tokenObject = decodeToken(token);
-    console.log(tokenObject);
+  
     if (!tokenObject) return false;
 
     const expiresTime = tokenObject.exp * 1000;
