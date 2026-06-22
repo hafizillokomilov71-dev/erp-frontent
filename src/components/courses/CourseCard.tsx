@@ -1,19 +1,28 @@
+// src/components/courses/CourseCard.tsx
 import { Link } from "react-router-dom";
 import Icon from "../ui/Icon";
 import type { ICourseCard } from "../../types/courses.type";
+import { useState } from "react";
 
 interface Props {
   course: ICourseCard;
 }
 
 const CourseCard = ({ course }: Props) => {
+  const [imgError, setImgError] = useState(false);
+
+  // Fallback rasm - agar asosiy rasm yuklanmasa
+  const fallbackImg = `https://picsum.photos/seed/fallback${Math.random()}/600/360`;
+
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden bg-slate-100">
         <img
-          src={course.img}
+          src={imgError ? fallbackImg : course.img}
           alt={course.title}
           className="aspect-5/3 w-full object-cover transition duration-300 group-hover:scale-105"
+          onError={() => setImgError(true)}
+          loading="lazy"
         />
         <span
           className={`absolute left-3 top-3 rounded-md px-2.5 py-1 text-xs font-semibold ${course.tagColor}`}

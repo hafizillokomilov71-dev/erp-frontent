@@ -1,5 +1,5 @@
 import Icon from "../ui/Icon";
-import { sortOptions } from "../../data/courses.data";
+import  { sortOptions } from "../../data/courses.data";
 
 interface Props {
   total: number;

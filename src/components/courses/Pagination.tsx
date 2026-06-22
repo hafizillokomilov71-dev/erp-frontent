@@ -20,7 +20,7 @@ const Pagination = ({ totalPages = 8 }: Props) => {
       >
         <Icon.chevronLeft className="h-4 w-4" />
       </button>
-
+    
       {pages.map((p, i) =>
         p === "..." ? (
           <span

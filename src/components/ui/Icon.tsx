@@ -1,3 +1,4 @@
+// src/components/ui/Icon.tsx
 import type { SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement>;
@@ -32,6 +33,7 @@ const Icon = {
       <path d="M19 12H5" />
     </svg>
   ),
+
   arrowRight: (props: IconProps) => (
     <svg {...base} {...props}>
       <path d="M5 12h14" />
@@ -41,47 +43,45 @@ const Icon = {
 
   mail: (props: IconProps) => (
     <svg
-      {...base}
-      {...props}
+      xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M3.33317 3.3335H16.6665C17.5832 3.3335 18.3332 4.0835 18.3332 5.00016V15.0002C18.3332 15.9168 17.5832 16.6668 16.6665 16.6668H3.33317C2.4165 16.6668 1.6665 15.9168 1.6665 15.0002V5.00016C1.6665 4.0835 2.4165 3.3335 3.33317 3.3335Z"
         stroke="#9CA3AF"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M18.3332 5L9.99984 10.8333L1.6665 5"
         stroke="#9CA3AF"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
 
   phone: (props: IconProps) => (
     <svg
-      {...base}
-      {...props}
+      xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M18.3332 14.0999V16.5999C18.3341 16.832 18.2866 17.0617 18.1936 17.2744C18.1006 17.487 17.9643 17.6779 17.7933 17.8348C17.6222 17.9917 17.4203 18.1112 17.2005 18.1855C16.9806 18.2599 16.7477 18.2875 16.5165 18.2666C13.9522 17.988 11.489 17.1117 9.32486 15.7083C7.31139 14.4288 5.60431 12.7217 4.32486 10.7083C2.91651 8.53426 2.04007 6.05908 1.76653 3.48325C1.7457 3.25281 1.77309 3.02055 1.84695 2.80127C1.9208 2.58199 2.03951 2.38049 2.1955 2.2096C2.3515 2.03871 2.54137 1.90218 2.75302 1.80869C2.96468 1.7152 3.19348 1.6668 3.42486 1.66658H5.92486C6.32928 1.6626 6.72136 1.80582 7.028 2.06953C7.33464 2.33324 7.53493 2.69946 7.59153 3.09992C7.69705 3.89997 7.89274 4.68552 8.17486 5.44158C8.28698 5.73985 8.31125 6.06401 8.24478 6.37565C8.17832 6.68729 8.02392 6.97334 7.79986 7.19992L6.74153 8.25825C7.92783 10.3445 9.65524 12.072 11.7415 13.2583L12.7999 12.1999C13.0264 11.9759 13.3125 11.8215 13.6241 11.755C13.9358 11.6885 14.2599 11.7128 14.5582 11.8249C15.3143 12.107 16.0998 12.3027 16.8999 12.4083C17.3047 12.4654 17.6744 12.6693 17.9386 12.9812C18.2029 13.2931 18.3433 13.6912 18.3332 14.0999Z"
         stroke="#9CA3AF"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
@@ -99,93 +99,93 @@ const Icon = {
       <path d="M7 11V7a5 5 0 0 1 10 0v4" />
     </svg>
   ),
+
   password: (props: IconProps) => (
     <svg
-      {...base}
-      {...props}
+      xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M15.8333 9.1665H4.16667C3.24619 9.1665 2.5 9.9127 2.5 10.8332V16.6665C2.5 17.587 3.24619 18.3332 4.16667 18.3332H15.8333C16.7538 18.3332 17.5 17.587 17.5 16.6665V10.8332C17.5 9.9127 16.7538 9.1665 15.8333 9.1665Z"
         stroke="#9CA3AF"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.8335 9.1665V5.83317C5.8335 4.7281 6.27248 3.66829 7.05388 2.88689C7.83529 2.10549 8.89509 1.6665 10.0002 1.6665C11.1052 1.6665 12.165 2.10549 12.9464 2.88689C13.7278 3.66829 14.1668 4.7281 14.1668 5.83317V9.1665"
         stroke="#9CA3AF"
-        stroke-width="1.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.66667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
 
   eye: (props: IconProps) => (
     <svg
-      {...base}
-      {...props}
+      xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="18"
       viewBox="0 0 16 18"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
-      <g clip-path="url(#clip0_1_4899)">
+      <g clipPath="url(#clip0_eye)">
         <path
           d="M0.666504 8.99984C0.666504 8.99984 3.33317 3.6665 7.99984 3.6665C12.6665 3.6665 15.3332 8.99984 15.3332 8.99984C15.3332 8.99984 12.6665 14.3332 7.99984 14.3332C3.33317 14.3332 0.666504 8.99984 0.666504 8.99984Z"
           stroke="#6B7280"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M8 11C9.10457 11 10 10.1046 10 9C10 7.89543 9.10457 7 8 7C6.89543 7 6 7.89543 6 9C6 10.1046 6.89543 11 8 11Z"
           stroke="#6B7280"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_4899">
+        <clipPath id="clip0_eye">
           <rect width="16" height="18" fill="white" />
         </clipPath>
       </defs>
     </svg>
   ),
+
   showEye: (props: IconProps) => (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="18"
       viewBox="0 0 16 18"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_1_4902)">
+      <g clipPath="url(#clip0_showEye)">
         <path
           d="M11.9598 12.9599C10.8202 13.8285 9.43258 14.3098 7.99984 14.3332C3.33317 14.3332 0.666504 8.99985 0.666504 8.99985C1.49576 7.45445 2.64593 6.10426 4.03984 5.03985M6.59984 3.82652C7.05873 3.71911 7.52855 3.66541 7.99984 3.66652C12.6665 3.66652 15.3332 8.99985 15.3332 8.99985C14.9285 9.75693 14.4459 10.4697 13.8932 11.1265M9.41317 10.4132C9.23007 10.6097 9.00927 10.7673 8.76394 10.8766C8.51861 10.9859 8.25377 11.0447 7.98523 11.0494C7.71669 11.0542 7.44995 11.0048 7.20091 10.9042C6.95188 10.8036 6.72565 10.6539 6.53573 10.464C6.34582 10.274 6.1961 10.0478 6.09551 9.79878C5.99492 9.54975 5.94552 9.283 5.95026 9.01446C5.955 8.74592 6.01378 8.48108 6.12309 8.23575C6.2324 7.99042 6.39001 7.76962 6.5865 7.58652"
           stroke="#6B7280"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M0.666504 1.6665L15.3332 16.3332"
           stroke="#6B7280"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
-        <clipPath id="clip0_1_4902">
+        <clipPath id="clip0_showEye">
           <rect width="16" height="18" fill="white" />
         </clipPath>
       </defs>
@@ -221,21 +221,21 @@ const Icon = {
 
   apple: (props: IconProps) => (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_3_128)">
+      <g clipPath="url(#clip0_apple)">
         <path
           d="M14.2084 10.0333C14.1834 7.425 16.3334 6.175 16.4334 6.10833C15.2168 4.33333 13.3251 4.09167 12.6584 4.06667C11.0501 3.9 9.52508 5.00833 8.70842 5.00833C7.89175 5.00833 6.63342 4.09167 5.30008 4.11667C3.55008 4.14167 1.93342 5.13333 1.02508 6.7C-0.799916 9.85833 0.558417 14.5333 2.33342 17.1C3.20008 18.35 4.23342 19.7667 5.58342 19.7167C6.89175 19.6583 7.38342 18.875 8.96675 18.875C10.5501 18.875 10.9918 19.7167 12.3751 19.6917C13.7834 19.6667 14.6751 18.4083 15.5334 17.15C16.5251 15.6917 16.9334 14.2833 16.9584 14.2083C16.9251 14.1917 14.2251 13.1583 14.2001 10.05L14.2084 10.0333ZM11.6584 2.91667C12.3751 2.04167 12.8668 0.833333 12.7334 -0.375C11.7001 -0.333333 10.4418 0.316667 9.69175 1.18333C9.02508 1.95 8.44175 3.18333 8.59175 4.375C9.75008 4.46667 10.9334 3.78333 11.6584 2.90833V2.91667Z"
           fill="white"
         />
       </g>
       <defs>
-        <clipPath id="clip0_3_128">
+        <clipPath id="clip0_apple">
           <rect width="20" height="20" fill="white" />
         </clipPath>
       </defs>

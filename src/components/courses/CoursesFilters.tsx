@@ -17,7 +17,6 @@ const FilterTitle = ({ children, className = "" }: FilterTitleProps) => (
 const CoursesFilters = () => {
   return (
     <aside className="h-fit rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
-      {/* Kategoriya */}
       <FilterTitle>Kategoriya</FilterTitle>
       <div className="mt-4 space-y-3">
         {categories.map((c) => (
@@ -35,8 +34,6 @@ const CoursesFilters = () => {
           </label>
         ))}
       </div>
-
-      {/* Daraja */}
       <FilterTitle className="mt-6">Daraja</FilterTitle>
       <div className="mt-4 space-y-3">
         {levels.map((level) => (

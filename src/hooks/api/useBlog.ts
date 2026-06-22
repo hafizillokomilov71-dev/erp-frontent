@@ -2,7 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "../../config/axios";
 import ENDPOINTS from "../../config/endpoints";
-import type { IBlog } from "../../types/blog.types";
+import type { IBlog } from "../../types/blog.type";
 
 // Mock ma'lumotlar
 const mockBlogs: IBlog[] = [

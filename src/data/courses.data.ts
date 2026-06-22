@@ -1,4 +1,4 @@
-import type { ICategory, ICourseCard } from "../types/courses.type";
+import type { ICategory, ICourseCard, ICourse } from "../types/courses.type";
 
 export const categories: ICategory[] = [
   { label: "Frontend", count: 8 },
@@ -10,7 +10,12 @@ export const categories: ICategory[] = [
   { label: "DevOps", count: 2 },
 ];
 
-export const levels: string[] = ["Barchasi", "Boshlovchi", "O'rtacha", "Mutaxassis"];
+export const levels: string[] = [
+  "Barchasi",
+  "Boshlovchi",
+  "O'rtacha",
+  "Mutaxassis",
+];
 
 export const durations: string[] = ["1-3 oy", "3-6 oy", "6+ oy"];
 
@@ -33,7 +38,7 @@ export const courseList: ICourseCard[] = [
     lessons: "24 dars",
     price: "490 000 so'm",
     oldPrice: "690 000 so'm",
-    img: "https://picsum.photos/seed/jscode/600/360",
+    img: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "React.js asoslari",
@@ -44,7 +49,7 @@ export const courseList: ICourseCard[] = [
     duration: "4 oy",
     lessons: "32 dars",
     price: "790 000 so'm",
-    img: "https://picsum.photos/seed/reactjs/600/360",
+    img: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "UX/UI dizayn",
@@ -55,7 +60,7 @@ export const courseList: ICourseCard[] = [
     duration: "5 oy",
     lessons: "40 dars",
     price: "890 000 so'm",
-    img: "https://picsum.photos/seed/uxui/600/360",
+    img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Python dasturchilik",
@@ -67,7 +72,7 @@ export const courseList: ICourseCard[] = [
     lessons: "48 dars",
     price: "790 000 so'm",
     oldPrice: "990 000 so'm",
-    img: "https://picsum.photos/seed/python/600/360",
+    img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Flutter mobil ilovalar",
@@ -78,7 +83,7 @@ export const courseList: ICourseCard[] = [
     duration: "5 oy",
     lessons: "36 dars",
     price: "990 000 so'm",
-    img: "https://picsum.photos/seed/flutter/600/360",
+    img: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Data Science va ML",
@@ -89,7 +94,7 @@ export const courseList: ICourseCard[] = [
     duration: "6 oy",
     lessons: "50 dars",
     price: "1 200 000 so'm",
-    img: "https://picsum.photos/seed/datasci/600/360",
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "DevOps muhandisi",
@@ -100,7 +105,7 @@ export const courseList: ICourseCard[] = [
     duration: "7 oy",
     lessons: "56 dars",
     price: "1 500 000 so'm",
-    img: "https://picsum.photos/seed/devops/600/360",
+    img: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Raqamli marketing",
@@ -111,7 +116,7 @@ export const courseList: ICourseCard[] = [
     duration: "3 oy",
     lessons: "28 dars",
     price: "690 000 so'm",
-    img: "https://picsum.photos/seed/marketing/600/360",
+    img: "https://images.unsplash.com/photo-1432889821006-c0eb3ec6e4bb?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Node.js dasturlash",
@@ -122,7 +127,7 @@ export const courseList: ICourseCard[] = [
     duration: "5 oy",
     lessons: "40 dars",
     price: "890 000 so'm",
-    img: "https://picsum.photos/seed/nodejs/600/360",
+    img: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "HTML & CSS asoslari",
@@ -133,7 +138,7 @@ export const courseList: ICourseCard[] = [
     duration: "2 oy",
     lessons: "16 dars",
     price: "390 000 so'm",
-    img: "https://picsum.photos/seed/htmlcss/600/360",
+    img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "Grafik dizayn",
@@ -144,7 +149,7 @@ export const courseList: ICourseCard[] = [
     duration: "4 oy",
     lessons: "32 dars",
     price: "690 000 so'm",
-    img: "https://picsum.photos/seed/graphic/600/360",
+    img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=360&fit=crop&q=80",
   },
   {
     title: "TypeScript",
@@ -155,6 +160,305 @@ export const courseList: ICourseCard[] = [
     duration: "2 oy",
     lessons: "20 dars",
     price: "590 000 so'm",
-    img: "https://picsum.photos/seed/typescript/600/360",
+    img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=360&fit=crop&q=80",
+  },
+];
+
+export const allCourses: ICourse[] = [
+  {
+    id: 1,
+    title: "JavaScript dasturlash",
+    category: "Frontend",
+    rating: 4.9,
+    reviews: 312,
+    students: 540,
+    duration: "3 oy",
+    language: "O'zbek tilida",
+    price: "790 000 so'm",
+    image:
+      "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800&h=400&fit=crop&q=80",
+    description:
+      "JavaScript — zamonaviy web ilovalarining asosi. Bu kurs sizga hech qanday oldindan tajriba kerak emas — biz noldan boshlab to'liq fullstack JavaScript dasturchisigacha ko'taramiz.",
+    tags: ["JavaScript", "Frontend", "Full Stack"],
+    whatYouLearn: [
+      "JavaScript asoslari va sintaksisi",
+      "DOM va sahifa bilan ishlash",
+      "Fetch API va REST",
+      "OOP printsiplari",
+      "ES6+: arrow, destructuring, spread",
+      "Asinxronlik va Promises",
+      "Git va GitHub bilan ishlash",
+      "Test yozish (Jest)",
+    ],
+    forWhom: [
+      "JavaScript bilan tanish bo'lmagan boshlovchilar uchun",
+      "Karyerasini o'zgartirmoqchi bo'lganlar uchun",
+      "Frontend yoki fullstack dasturchi bo'lishni xohlaganlar uchun",
+    ],
+    teacher: {
+      name: "Akmal Karimov",
+      role: "JavaScript Lead",
+      avatar: "https://i.pravatar.cc/160?img=12",
+      bio: "8 yillik frontend tajriba. EPAM va Uzcard'da ishlagan.",
+      experience: "8 yil",
+      students: 540,
+      courses: 5,
+    },
+    reviewsList: [
+      {
+        id: 1,
+        name: "Sardor Alimov",
+        avatar: "https://i.pravatar.cc/100?img=1",
+        rating: 5,
+        date: "12-may, 2026",
+        text: "Ajoyib kurs! Juda tushunarli va amaliy.",
+      },
+      {
+        id: 2,
+        name: "Gulnora Xalilova",
+        avatar: "https://i.pravatar.cc/100?img=2",
+        rating: 5,
+        date: "10-may, 2026",
+        text: "Akmal domla juda zo'r tushuntiradi.",
+      },
+    ],
+    similarCourses: [
+      {
+        id: 2,
+        title: "React.js asoslari",
+        category: "Frontend",
+        rating: 4.8,
+        price: "790 000 so'm",
+        students: 420,
+        image:
+          "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=300&h=200&fit=crop&q=80",
+        link: "/course/react",
+      },
+      {
+        id: 3,
+        title: "HTML & CSS asoslari",
+        category: "Frontend",
+        rating: 4.9,
+        price: "390 000 so'm",
+        students: 680,
+        image:
+          "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=200&fit=crop&q=80",
+        link: "/course/html-css",
+      },
+      {
+        id: 4,
+        title: "TypeScript",
+        category: "Frontend",
+        rating: 4.8,
+        price: "590 000 so'm",
+        students: 350,
+        image:
+          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=200&fit=crop&q=80",
+        link: "/course/typescript",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "React.js asoslari",
+    category: "Frontend",
+    rating: 4.8,
+    reviews: 256,
+    students: 420,
+    duration: "2.5 oy",
+    language: "O'zbek tilida",
+    price: "790 000 so'm",
+    image:
+      "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&h=400&fit=crop&q=80",
+    description:
+      "React.js — zamonaviy frontend dasturlashning eng mashhur kutubxonasi. Ushbu kursda siz React-ni noldan boshlab o'rganasiz.",
+    tags: ["React", "Frontend", "SPA"],
+    whatYouLearn: [
+      "React asoslari va JSX",
+      "Komponentlar va props",
+      "State va lifecycle",
+      "Hooks (useState, useEffect)",
+      "React Router",
+      "Redux Toolkit",
+      "API dan ma'lumot olish",
+    ],
+    forWhom: [
+      "JavaScript biladiganlar uchun",
+      "Frontend dasturchi bo'lishni xohlaganlar uchun",
+    ],
+    teacher: {
+      name: "Nodira Yusupova",
+      role: "React Developer",
+      avatar: "https://i.pravatar.cc/160?img=45",
+      bio: "5 yillik React tajribasi. Fintech mahsulotlar muallifi.",
+      experience: "5 yil",
+      students: 420,
+      courses: 3,
+    },
+    reviewsList: [
+      {
+        id: 1,
+        name: "Bekzod Salimov",
+        avatar: "https://i.pravatar.cc/100?img=5",
+        rating: 5,
+        date: "11-may, 2026",
+        text: "React ni shu qadar tushunarli tushuntirganini ko'rmaganman.",
+      },
+    ],
+    similarCourses: [
+      {
+        id: 1,
+        title: "JavaScript dasturlash",
+        category: "Frontend",
+        rating: 4.9,
+        price: "790 000 so'm",
+        students: 540,
+        image:
+          "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=300&h=200&fit=crop&q=80",
+        link: "/course/javascript",
+      },
+      {
+        id: 3,
+        title: "HTML & CSS asoslari",
+        category: "Frontend",
+        rating: 4.9,
+        price: "390 000 so'm",
+        students: 680,
+        image:
+          "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=200&fit=crop&q=80",
+        link: "/course/html-css",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "HTML & CSS asoslari",
+    category: "Frontend",
+    rating: 4.9,
+    reviews: 489,
+    students: 680,
+    duration: "1.5 oy",
+    language: "O'zbek tilida",
+    price: "390 000 so'm",
+    image:
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=400&fit=crop&q=80",
+    description:
+      "HTML va CSS — veb-sahifalarning asosi. Flexbox, Grid, animatsiyalar va responsive dizayn.",
+    tags: ["HTML", "CSS", "Frontend"],
+    whatYouLearn: [
+      "HTML asoslari",
+      "Semantik HTML",
+      "CSS selektorlar",
+      "Flexbox va Grid",
+      "Responsive dizayn",
+      "Animatsiyalar",
+    ],
+    forWhom: [
+      "Hech qanday tajribasi bo'lmaganlar uchun",
+      "Veb-dizayn bilan shug'ullanmoqchi bo'lganlar uchun",
+    ],
+    teacher: {
+      name: "Madina Ergasheva",
+      role: "UX/UI Dizayner",
+      avatar: "https://i.pravatar.cc/160?img=47",
+      bio: "7 yillik tajriba. Yandex va Behance loyihalari.",
+      experience: "7 yil",
+      students: 680,
+      courses: 4,
+    },
+    reviewsList: [
+      {
+        id: 1,
+        name: "Dilorom Nazarova",
+        avatar: "https://i.pravatar.cc/100?img=7",
+        rating: 5,
+        date: "8-may, 2026",
+        text: "HTML va CSS ni shunchalik oson tushuntirib berishgan.",
+      },
+    ],
+    similarCourses: [
+      {
+        id: 1,
+        title: "JavaScript dasturlash",
+        category: "Frontend",
+        rating: 4.9,
+        price: "790 000 so'm",
+        students: 540,
+        image:
+          "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=300&h=200&fit=crop&q=80",
+        link: "/course/javascript",
+      },
+      {
+        id: 2,
+        title: "React.js asoslari",
+        category: "Frontend",
+        rating: 4.8,
+        price: "790 000 so'm",
+        students: 420,
+        image:
+          "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=300&h=200&fit=crop&q=80",
+        link: "/course/react",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "TypeScript",
+    category: "Frontend",
+    rating: 4.8,
+    reviews: 198,
+    students: 350,
+    duration: "2 oy",
+    language: "O'zbek tilida",
+    price: "590 000 so'm",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop&q=80",
+    description:
+      "TypeScript — JavaScript-ga tiplar qo'shadigan til. Katta loyihalarda xatoliklarni oldini olish.",
+    tags: ["TypeScript", "JavaScript", "Frontend"],
+    whatYouLearn: [
+      "TypeScript asoslari",
+      "Tiplar va interfeyslar",
+      "Generics",
+      "TypeScript bilan React",
+    ],
+    forWhom: [
+      "JavaScript biladiganlar uchun",
+      "Kod sifatini oshirishni xohlaganlar uchun",
+    ],
+    teacher: {
+      name: "Akmal Karimov",
+      role: "JavaScript Lead",
+      avatar: "https://i.pravatar.cc/160?img=12",
+      bio: "8 yillik frontend tajriba. TypeScript bo'yicha mutaxassis.",
+      experience: "8 yil",
+      students: 350,
+      courses: 6,
+    },
+    reviewsList: [],
+    similarCourses: [
+      {
+        id: 1,
+        title: "JavaScript dasturlash",
+        category: "Frontend",
+        rating: 4.9,
+        price: "790 000 so'm",
+        students: 540,
+        image:
+          "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=300&h=200&fit=crop&q=80",
+        link: "/course/javascript",
+      },
+      {
+        id: 2,
+        title: "React.js asoslari",
+        category: "Frontend",
+        rating: 4.8,
+        price: "790 000 so'm",
+        students: 420,
+        image:
+          "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=300&h=200&fit=crop&q=80",
+        link: "/course/react",
+      },
+    ],
   },
 ];
