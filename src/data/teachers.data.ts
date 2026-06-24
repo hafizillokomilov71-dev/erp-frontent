@@ -1,4 +1,8 @@
-import type { ITeacherCard, ITeacherCategory } from "../types/teachers.type";
+import type {
+  ITeacherCard,
+  ITeacherCategory,
+  ITeacherDetail,
+} from "../types/teachers.type";
 
 export const teacherCategories: ITeacherCategory[] = [
   { label: "Barchasi", value: "all" },
@@ -11,6 +15,7 @@ export const teacherCategories: ITeacherCategory[] = [
 
 export const teachersList: ITeacherCard[] = [
   {
+    id: 1,
     name: "Akmal Karimov",
     role: "JavaScript Lead",
     category: "frontend",
@@ -23,6 +28,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=12",
   },
   {
+    id: 2,
     name: "Madina Ergasheva",
     role: "UX/UI dizayner",
     category: "design",
@@ -35,6 +41,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=47",
   },
   {
+    id: 3,
     name: "Sherzod Rahimov",
     role: "Python / Django Senior",
     category: "backend",
@@ -47,6 +54,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=33",
   },
   {
+    id: 4,
     name: "Nodira Yusupova",
     role: "React Developer",
     category: "frontend",
@@ -59,6 +67,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=45",
   },
   {
+    id: 5,
     name: "Sevara Tursunova",
     role: "Data Scientist",
     category: "backend",
@@ -71,6 +80,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=20",
   },
   {
+    id: 6,
     name: "Otabek Salimov",
     role: "Flutter Developer",
     category: "mobile",
@@ -83,6 +93,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=15",
   },
   {
+    id: 7,
     name: "Diloraxon Nazarova",
     role: "Marketing Expert",
     category: "marketing",
@@ -95,6 +106,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=44",
   },
   {
+    id: 8,
     name: "Jasur Mahmudov",
     role: "DevOps muhandisi",
     category: "backend",
@@ -107,6 +119,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=51",
   },
   {
+    id: 9,
     name: "Bekzod Salimov",
     role: "Backend Developer",
     category: "backend",
@@ -119,6 +132,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=59",
   },
   {
+    id: 10,
     name: "Kamola Yusupova",
     role: "Grafik dizayner",
     category: "design",
@@ -131,6 +145,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=32",
   },
   {
+    id: 11,
     name: "Aziz Inomov",
     role: "Java Developer",
     category: "backend",
@@ -143,6 +158,7 @@ export const teachersList: ITeacherCard[] = [
     img: "https://i.pravatar.cc/160?img=68",
   },
   {
+    id: 12,
     name: "Gulnora Rasulova",
     role: "Product Designer",
     category: "design",
@@ -153,5 +169,262 @@ export const teachersList: ITeacherCard[] = [
       ["4.8", "Reyting"],
     ],
     img: "https://i.pravatar.cc/160?img=24",
+  },
+];
+export const teacherDetails: ITeacherDetail[] = [
+  {
+    id: 1,
+    name: "Akmal Karimov",
+    role: "JavaScript Lead",
+    category: "frontend",
+    bio: "8 yillik frontend tajriba. EPAM va Uzcard'da ishlagan.",
+    img: "https://i.pravatar.cc/160?img=12",
+    experience: "8 yil",
+    totalStudents: 540,
+    totalCourses: 12,
+    rating: 4.9,
+    startDate: "1-iyul, 2026",
+    stats: [
+      ["12", "Kurs"],
+      ["540", "Talaba"],
+      ["4.9", "Reyting"],
+      ["8", "Tajriba"],
+    ],
+    description:
+      "Akmal Karimov — frontend dasturlash bo'yicha 8 yillik amaliy tajribaga ega mutaxassis. Karyerasini 2018-yilda EPAM Systems kompaniyasida boshlagan, keyinchalik Uzcard'da to'lov tizimlari uchun yirik frontend ilovalarni ishlab chiqqan. 2022-yildan beri O'quv Markazda JavaScript yo'nalishini boshqaradi. Uning darslari amaliyotga asoslangan: har bir mavzu real loyiha misolida tushuntiriladi. Bitiruvchilarining 78%ni kurs tugagach 3 oy ichida ishga joylashgan.",
+    skills: [
+      "JavaScript (ES8+)",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Git",
+      "Webpack / Vite",
+      "Testing (Jest)",
+    ],
+    workExperience: [
+      {
+        period: "2022 — Hozir",
+        position: "JavaScript Lead",
+        company: "O'quv Markaz, Toshkent",
+        description:
+          "JavaScript yo'nalishi rahbari. 12 ta kurs muallifi, o'quv dasturlarini ishlab chiqish va yangi o'qituvchilarni tayyorlash.",
+      },
+      {
+        period: "2020 — 2022",
+        position: "Senior Frontend Developer",
+        company: "Uzcard, Toshkent",
+        description:
+          "To'lov tizimlari uchun web ilovalar. React + TypeScript stack, 1 mln+ foydalanuvchili mahsulotlar.",
+      },
+      {
+        period: "2018 — 2020",
+        position: "Frontend Developer",
+        company: "EPAM Systems",
+        description:
+          "Xalqaro fintech loyihalarida frontend ishlab chiqish, kod sifati bo'yicha mentorlik.",
+      },
+    ],
+    certificates: [
+      {
+        name: "AWS Certified Developer",
+        issuer: "Amazon",
+        year: "2024",
+      },
+      {
+        name: "Meta Frontend Developer",
+        issuer: "Coursera",
+        year: "2023",
+      },
+      {
+        name: "Pedagogika asoslari",
+        issuer: "TDPU",
+        year: "2022",
+      },
+    ],
+    schedule: [
+      { days: "Du / Chor / Ju", time: "18:00 — 20:00" },
+      { days: "Sesh / Pay", time: "14:00 — 16:00" },
+      { days: "Shanba", time: "10:00 — 13:00" },
+    ],
+    courses: [
+      {
+        id: 1,
+        title: "JavaScript dasturlash",
+        students: 540,
+        rating: 4.9,
+        price: "790 000 so'm",
+      },
+      {
+        id: 2,
+        title: "React.js asoslari",
+        students: 420,
+        rating: 4.8,
+        price: "790 000 so'm",
+      },
+      {
+        id: 4,
+        title: "TypeScript",
+        students: 350,
+        rating: 4.8,
+        price: "590 000 so'm",
+      },
+    ],
+    reviewsList: [
+      {
+        id: 1,
+        name: "Sardor Alimov",
+        avatar: "https://i.pravatar.cc/100?img=1",
+        rating: 5,
+        date: "12-may, 2026",
+        text: "Ajoyib o'qituvchi! Juda tushunarli va amaliy darslar.",
+      },
+      {
+        id: 2,
+        name: "Gulnora Xalilova",
+        avatar: "https://i.pravatar.cc/100?img=2",
+        rating: 5,
+        date: "10-may, 2026",
+        text: "Akmal domla juda zo'r tushuntiradi. Har bir darsdan keyin amaliy topshiriqlar.",
+      },
+      {
+        id: 3,
+        name: "Jasur Mahmudov",
+        avatar: "https://i.pravatar.cc/100?img=3",
+        rating: 4,
+        date: "8-may, 2026",
+        text: "Kurs juda foydali. Professional o'qituvchi.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Madina Ergasheva",
+    role: "UX/UI Dizayner",
+    category: "design",
+    bio: "7 yillik tajriba. Yandex va Behance loyihalari.",
+    img: "https://i.pravatar.cc/160?img=47",
+    experience: "7 yil",
+    totalStudents: 320,
+    totalCourses: 8,
+    rating: 4.9,
+    startDate: "15-iyun, 2026",
+    stats: [
+      ["8", "Kurs"],
+      ["320", "Talaba"],
+      ["4.9", "Reyting"],
+      ["7", "Tajriba"],
+    ],
+    description:
+      "Madina Ergasheva — UX/UI dizayn bo'yicha 7 yillik tajribaga ega mutaxassis. Yandex va Behance kabi yirik platformalarda ishlagan. Hozirda O'quv Markazda dizayn yo'nalishini boshqaradi.",
+    skills: [
+      "Figma",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator",
+      "Prototyping",
+      "UX Research",
+    ],
+    workExperience: [
+      {
+        period: "2021 — Hozir",
+        position: "UX/UI Lead",
+        company: "O'quv Markaz, Toshkent",
+        description: "Dizayn yo'nalishi rahbari. 8 ta kurs muallifi.",
+      },
+      {
+        period: "2019 — 2021",
+        position: "UX/UI Designer",
+        company: "Yandex",
+        description: "Yandex Maps va Yandex Go loyihalarida ishlagan.",
+      },
+    ],
+    certificates: [
+      {
+        name: "Google UX Design",
+        issuer: "Google",
+        year: "2023",
+      },
+    ],
+    schedule: [
+      { days: "Du / Chor", time: "16:00 — 18:00" },
+      { days: "Shanba", time: "11:00 — 14:00" },
+    ],
+    courses: [
+      {
+        id: 3,
+        title: "UX/UI dizayn",
+        students: 320,
+        rating: 4.9,
+        price: "890 000 so'm",
+      },
+      {
+        id: 5,
+        title: "Grafik dizayn",
+        students: 280,
+        rating: 4.7,
+        price: "690 000 so'm",
+      },
+    ],
+    reviewsList: [
+      {
+        id: 1,
+        name: "Dilorom Nazarova",
+        avatar: "https://i.pravatar.cc/100?img=7",
+        rating: 5,
+        date: "8-may, 2026",
+        text: "Madina opa juda zo'r dizayner va o'qituvchi.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Sherzod Rahimov",
+    role: "Python / Django Senior",
+    category: "backend",
+    bio: "10 yillik backend tajriba. AWS sertifikatli.",
+    img: "https://i.pravatar.cc/160?img=33",
+    experience: "10 yil",
+    totalStudents: 680,
+    totalCourses: 15,
+    rating: 4.8,
+    startDate: "20-iyun, 2026",
+    stats: [
+      ["15", "Kurs"],
+      ["680", "Talaba"],
+      ["4.8", "Reyting"],
+      ["10", "Tajriba"],
+    ],
+    description:
+      "Sherzod Rahimov — backend dasturlash bo'yicha 10 yillik tajribaga ega mutaxassis. AWS sertifikatli dasturchi.",
+    skills: ["Python", "Django", "Flask", "PostgreSQL", "AWS", "Docker"],
+    workExperience: [
+      {
+        period: "2020 — Hozir",
+        position: "Backend Lead",
+        company: "O'quv Markaz, Toshkent",
+        description: "Backend yo'nalishi rahbari.",
+      },
+    ],
+    certificates: [
+      {
+        name: "AWS Certified Developer",
+        issuer: "Amazon",
+        year: "2024",
+      },
+    ],
+    schedule: [
+      { days: "Sesh / Pay", time: "18:00 — 20:00" },
+      { days: "Shanba", time: "10:00 — 13:00" },
+    ],
+    courses: [
+      {
+        id: 4,
+        title: "Python dasturchilik",
+        students: 680,
+        rating: 4.7,
+        price: "790 000 so'm",
+      },
+    ],
+    reviewsList: [],
   },
 ];

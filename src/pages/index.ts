@@ -4,6 +4,7 @@ export { default as Register } from "./Register";
 export { default as Courses } from "./Courses";
 export { default as CourseDetail } from "./CourseDetail";
 export { default as Teachers } from "./Teachers";
+export { default as TeacherDetail } from "./TeacherDetail"; // ✅ YANGI
 export { default as About } from "./About";
 export { default as Contact } from "./Contact";
 export { default as Groups } from "./Groups";

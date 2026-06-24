@@ -8,11 +8,9 @@ import { teachersList } from "../data/teachers.data";
 
 import { fetchTeachers } from "../hooks/api/teachers";
 import { useEffect } from "react";
-
-
+import { Link } from "react-router-dom";
 
 const Teachers = () => {
-
   useEffect(() => {
     const getTeachers = async () => {
       const teachers = await fetchTeachers();
@@ -21,7 +19,6 @@ const Teachers = () => {
 
     getTeachers();
   }, []);
-
 
   return (
     <div className="bg-white">
@@ -32,7 +29,9 @@ const Teachers = () => {
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {teachersList.map((teacher) => (
-            <TeacherCard key={teacher.name} teacher={teacher} />
+            <Link to={`/teacher/${teacher.id}`} key={teacher.name}>
+              <TeacherCard teacher={teacher} />
+            </Link>
           ))}
         </div>
 

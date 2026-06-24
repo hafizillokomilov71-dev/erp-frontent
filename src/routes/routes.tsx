@@ -7,6 +7,7 @@ import {
   Courses,
   CourseDetail,
   Teachers,
+  TeacherDetail,
   About,
   Contact,
   Groups,
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/teachers",
         element: <Teachers />,
+      },
+      {
+        path: "/teacher/:id",
+        element: <TeacherDetail />,
       },
       {
         path: "/about",
@@ -99,4 +104,5 @@ const router = createBrowserRouter([
     element: <NotFound />,
   },
 ]);
+
 export default router;
