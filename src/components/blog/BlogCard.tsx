@@ -37,7 +37,7 @@ function BlogCard({ post, onReadMore }: Props) {
 
           <button
             onClick={onReadMore}
-            className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-100 transition whitespace-nowrap"
+            className="px-3 py-1.5 cursor-pointer bg-blue-50 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-100 transition whitespace-nowrap"
           >
             O'qish
           </button>

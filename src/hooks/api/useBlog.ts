@@ -4,7 +4,6 @@ import axios from "../../config/axios";
 import ENDPOINTS from "../../config/endpoints";
 import type { IBlog } from "../../types/blog.type";
 
-// Mock ma'lumotlar
 const mockBlogs: IBlog[] = [
   {
     id: "1",
@@ -201,8 +200,6 @@ const useBlog = (category?: string, searchQuery?: string) => {
           "⚠️ Backenddan ma'lumot kelmadi, mock ishlatilmoqda",
           error,
         );
-
-        // Mock ma'lumotlarni filter qilish
         let filteredBlogs = mockBlogs;
 
         if (category && category !== "all") {
@@ -239,7 +236,6 @@ export const usePopularBlogs = () => {
         const response = await axios.get(ENDPOINTS.blog.popular);
         return response.data?.data || [];
       } catch {
-        // Mock popular blogs
         return mockBlogs.filter((blog) => blog.isPopular);
       }
     },
@@ -256,7 +252,6 @@ export const useBlogTags = () => {
         const response = await axios.get(ENDPOINTS.blog.tags);
         return response.data?.data || [];
       } catch {
-        // Mock tags
         const tags = [
           "JavaScript",
           "React",
