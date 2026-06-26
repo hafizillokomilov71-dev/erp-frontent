@@ -1,16 +1,24 @@
+// components/ui/Input.tsx
 import type { ReactNode } from "react";
-import type { FieldValues, Path, UseFormReturn } from "react-hook-form";
+import type {
+  FieldValues,
+  Path,
+  UseFormReturn,
+  RegisterOptions,
+} from "react-hook-form";
 
 interface InputProps<T extends FieldValues> {
   form: UseFormReturn<T>;
   name: Path<T>;
   label?: string;
-  className: string;
-  id: string;
-  type: string;
-  placeholder: string;
+  className?: string;
+  id?: string;
+  type?: string;
+  placeholder?: string;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
+  rules?: RegisterOptions<T>;
+  disabled?: boolean;
 }
 
 const Input = <T extends FieldValues>({
@@ -18,11 +26,13 @@ const Input = <T extends FieldValues>({
   name,
   label,
   id,
-  type,
+  type = "text",
   className = "",
   placeholder,
   leftIcon,
   rightIcon,
+  rules,
+  disabled,
 }: InputProps<T>) => {
   const errorMessage = form.formState.errors[name]?.message as
     | string
@@ -50,6 +60,7 @@ const Input = <T extends FieldValues>({
           type={type}
           id={id ?? name}
           placeholder={placeholder}
+          disabled={disabled}
           className={`w-full rounded-xl border bg-white py-3 text-sm text-slate-900 placeholder:text-slate-400 transition outline-none focus:ring-2 disabled:cursor-not-allowed disabled:bg-slate-50 ${
             leftIcon ? "pl-10" : "pl-4"
           } ${rightIcon ? "pr-10" : "pr-4"} ${
@@ -57,7 +68,7 @@ const Input = <T extends FieldValues>({
               ? "border-red-400 focus:border-red-500 focus:ring-red-100"
               : "border-slate-200 focus:border-blue-500 focus:ring-blue-100"
           } ${className}`}
-          {...form.register(name)}
+          {...form.register(name, rules)}
         />
 
         {rightIcon && (
@@ -73,4 +84,5 @@ const Input = <T extends FieldValues>({
     </div>
   );
 };
+
 export default Input;

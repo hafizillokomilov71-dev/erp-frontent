@@ -18,7 +18,6 @@ export interface ICategory {
   label: string;
   value: string;
 }
-
 export interface IBlog {
   id: string;
   title: string;

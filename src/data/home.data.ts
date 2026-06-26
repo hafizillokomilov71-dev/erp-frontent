@@ -252,3 +252,78 @@ export const footerColumns: IFooterColumn[] = [
   { title: "SAHIFALAR", links: ["Biz haqimizda", "Kurslar", "O'qituvchilar", "Blog", "Aloqa"] },
   { title: "KURSLAR", links: ["Frontend", "Backend", "UX/UI Dizayn", "Mobil dasturlash", "Marketing"] },
 ];
+// data/home.data.ts - Teachers ma'lumotlariga category qo'shish
+export const teacher= [
+  {
+    name: "Akmal Karimov",
+    img: "/images/teachers/akmal.jpg",
+    role: "Senior Frontend Developer",
+    bio: "6 yillik tajriba. React, TypeScript va Next.js bo'yicha mutaxassis.",
+    category: "frontend",
+    stats: [
+      ["500+", "Talaba"],
+      ["12", "Kurs"],
+      ["4.9", "Reyting"],
+    ],
+  },
+  {
+    name: "Madina Ergashova",
+    img: "/images/teachers/madina.jpg",
+    role: "UX/UI Designer",
+    bio: "Figma, Adobe XD va dizayn tizimlari bo'yicha mutaxassis.",
+    category: "design",
+    stats: [
+      ["300+", "Talaba"],
+      ["8", "Kurs"],
+      ["4.8", "Reyting"],
+    ],
+  },
+  {
+    name: "Jasur Rasulov",
+    img: "/images/teachers/jasur.jpg",
+    role: "Backend Developer",
+    bio: "Node.js, Python va PostgreSQL bo'yicha mutaxassis.",
+    category: "backend",
+    stats: [
+      ["400+", "Talaba"],
+      ["10", "Kurs"],
+      ["4.7", "Reyting"],
+    ],
+  },
+  {
+    name: "Gulnoza To'xtayeva",
+    img: "/images/teachers/gulnoza.jpg",
+    role: "Mobile Developer",
+    bio: "Flutter, React Native va iOS/Android bo'yicha mutaxassis.",
+    category: "mobile",
+    stats: [
+      ["250+", "Talaba"],
+      ["6", "Kurs"],
+      ["4.9", "Reyting"],
+    ],
+  },
+  {
+    name: "Sardor Qodirov",
+    img: "/images/teachers/sardor.jpg",
+    role: "DevOps Engineer",
+    bio: "Docker, Kubernetes va CI/CD bo'yicha mutaxassis.",
+    category: "devops",
+    stats: [
+      ["200+", "Talaba"],
+      ["5", "Kurs"],
+      ["4.8", "Reyting"],
+    ],
+  },
+  {
+    name: "Dilnoza Abdullayeva",
+    img: "/images/teachers/dilnoza.jpg",
+    role: "Data Scientist",
+    bio: "Machine Learning, Python va SQL bo'yicha mutaxassis.",
+    category: "data",
+    stats: [
+      ["180+", "Talaba"],
+      ["4", "Kurs"],
+      ["4.9", "Reyting"],
+    ],
+  },
+];
