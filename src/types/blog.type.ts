@@ -18,3 +18,22 @@ export interface ICategory {
   label: string;
   value: string;
 }
+
+export interface IBlog {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  author: {
+    name: string;
+    avatar?: string;
+    role?: string;
+  };
+  date: string;
+  readTime: string;
+  category: string;
+  tags: string[];
+  views: number;
+  likes: number;
+  isPopular?: boolean;
+}
